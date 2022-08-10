@@ -4,3 +4,44 @@
 
 layout: home
 ---
+
+<h1>Denperidge's Projects</h1>
+<ul>
+{% for project in site.projects %}
+<li><a href="{{ project.slug }}">{{ project.title }}</a></li>
+{% endfor %}
+</ul>
+
+{% for project in site.projects %}
+
+<h2 id="{{ project.slug }}">{{ project.title }}</h2>
+
+<object data="https://gh-card.dev/repos/{{ project.repoowner }}/{{ project.reponame }}.svg"></object>
+
+<p>{{ project.description }}</p>
+
+<p>Pro:</p>
+<ul>
+    {% for part in project.pro %}
+    <li>{{ part }}</li>
+    {% endfor %}
+</ul>
+
+<p>Contra:</p>
+<ul>
+    {% for part in project.pro %}
+    <li>{{ part }}</li>
+    {% endfor %}
+</ul>
+
+
+{% if project.website %}
+<ul>
+    <li>View the wesbite <a href="{{ projects.website }}">here</a>,</li>
+    <li>and view the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}">here</a>!</li>
+</ul>
+{% else %}
+<p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}">here</a>,</p>
+{% endif %}
+
+{% endfor %}
