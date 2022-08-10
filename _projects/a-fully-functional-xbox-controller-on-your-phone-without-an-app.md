@@ -7,7 +7,7 @@ website: ""
 description: Connect through your phones web browser to the locally hosted
   webserver on your computer, and bam, the pc treats it as an Xbox-controller.
 pro:
-  - Only an install on the computer, none on the phone.
+  - While requiring an install on the computer, it required no installs on the phone!
   - The PC fully registers it like a normal controller, thus it works with all
     controller-supported games.
   - Multiple controllers supported.

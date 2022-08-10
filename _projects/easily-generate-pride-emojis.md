@@ -11,6 +11,6 @@ pro:
   - The script outputs regular PNG's, and only needs to be run once.
 con:
   - Releases could and should be automated.
-  - An user-interface for selecting which shapes & flags to use would go a long
+  - A user-interface for selecting which shapes & flags to use would go a long
     way for end-user customisation.
 ---
