@@ -5,6 +5,8 @@
 layout: home
 ---
 
+<p>Don't forget to check out <a href="https://resume.denperidge.com/">my resume</a> as well!</p>
+
 <h1>Denperidge's Projects</h1>
 <ul>
 {% for project in site.projects %}
