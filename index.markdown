@@ -52,6 +52,12 @@ layout: home
     {% endfor %}
 </p>
 
-<br><hr><br><br>
+<br>
+
+
+---
+
+
+<br><br>
 
 {% endfor %}
