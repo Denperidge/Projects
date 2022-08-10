@@ -25,16 +25,14 @@ layout: home
 <p>{{ project.description }}</p>
 
 
-
-<h3>What went right/what could improve?</h3>
-<p>Pro:</p>
+<h3>Pro:</h3>
 <ul>
     {% for part in project.pro %}
     <li>{{ part }}</li>
     {% endfor %}
 </ul>
 
-<p>Contra:</p>
+<h3>Contra:</h3>
 <ul>
     {% for part in project.con %}
     <li>{{ part }}</li>
@@ -49,7 +47,8 @@ layout: home
     <li>... and view the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>!</li>
 </ul>
 {% else %}
-<p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>,</p>
+<h3>Repo</h3>
+<p>View the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>!</p>
 {% endif %}
 
 {% if project.tags %}
