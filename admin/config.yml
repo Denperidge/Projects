@@ -22,12 +22,14 @@ collections:
         name: "pro"
         widget: "list"
         allow_add: true
+        summary: '{{ field.description }}'
         field: {label: "Description", name: "description", widget: "text"}
       - label: "Negative parts"
         name: "con"
         widget: "list"
         allow_add: true
         field: {label: "Description", name: "description", widget: "text"}
+        summary: '{{ field.description }}'
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "contributions"
