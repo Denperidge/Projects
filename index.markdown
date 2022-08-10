@@ -26,6 +26,7 @@ layout: home
 
 
 
+<h3>What went right/what could improve?</h3>
 <p>Pro:</p>
 <ul>
     {% for part in project.pro %}
@@ -42,6 +43,7 @@ layout: home
 
 
 {% if project.website %}
+<h3>URLs</h3>
 <ul>
     <li>View the wesbite <a href="{{ project.website }}">here</a>...</li>
     <li>... and view the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>!</li>
