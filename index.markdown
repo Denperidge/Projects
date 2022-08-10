@@ -52,11 +52,13 @@ layout: home
 <p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>,</p>
 {% endif %}
 
+{% if project.tags %}
 <p>Tags: 
     {% for tag in project.tags %}
     <a href="tag?{{ tag }}">{{ tag }}</a>,&nbsp;
     {% endfor %}
 </p>
+{% endif %}
 
 <br>
 
