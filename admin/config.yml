@@ -22,7 +22,7 @@ collections:
       - {label: "Lacking parts", name: "con", widget: "list"}
 
   - name: "contributions"
-    label: "contributions"
+    label: "Contributions"
     folder: "_contributions"
     create: true
     fields:
