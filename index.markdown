@@ -46,11 +46,11 @@ layout: home
 <p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}">here</a>,</p>
 {% endif %}
 
-{% endfor %}
-
 <p>Tags: 
     {% for tag in page.tags %}
-    <a href="{{ tag }}">{{ tag }}</a>,&nbsp;
+    <a href="tag?{{ tag }}">{{ tag }}</a>,&nbsp;
     {% endfor %}
 </p>
 
+
+{% endfor %}
