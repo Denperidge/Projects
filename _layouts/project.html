@@ -16,7 +16,7 @@ layout: post
 
 <p>Contra:</p>
 <ul>
-    {% for part in page.pro %}
+    {% for part in page.con %}
     <li>{{ part }}</li>
     {% endfor %}
 </ul>
@@ -30,5 +30,11 @@ layout: post
 {% else %}
 <p>View the repository here! <a href="https://github.com/{{ page.repoowner }}/{{ page.reponame }}">here</a>,</p>
 {% endif %}
+
+<p>Tags: 
+    {% for tag in page.tags %}
+    <a href="{{ tag }}">{{ tag }}</a>,&nbsp;
+    {% endfor %}
+</p>
 
 {{ content }}

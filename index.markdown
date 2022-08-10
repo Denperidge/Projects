@@ -29,7 +29,7 @@ layout: home
 
 <p>Contra:</p>
 <ul>
-    {% for part in project.pro %}
+    {% for part in project.con %}
     <li>{{ part }}</li>
     {% endfor %}
 </ul>
@@ -45,3 +45,10 @@ layout: home
 {% endif %}
 
 {% endfor %}
+
+<p>Tags: 
+    {% for tag in page.tags %}
+    <a href="{{ tag }}">{{ tag }}</a>,&nbsp;
+    {% endfor %}
+</p>
+
