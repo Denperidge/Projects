@@ -47,7 +47,7 @@ layout: home
 {% endif %}
 
 <p>Tags: 
-    {% for tag in page.tags %}
+    {% for tag in project.tags %}
     <a href="tag?{{ tag }}">{{ tag }}</a>,&nbsp;
     {% endfor %}
 </p>
