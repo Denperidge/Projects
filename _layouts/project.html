@@ -1,0 +1,30 @@
+<h1>{{ page.title }}</h1>
+
+<object data="https://gh-card.dev/repos/{{ page.repoowner }}/{{ page.reponame }}.svg"></object>
+
+<p>{{ page.description }}</p>
+
+<p>Pro:</p>
+<ul>
+    {% for part in page.pro %}
+    <li>{{ part }}</li>
+    {% endfor %}
+</ul>
+
+<p>Contra:</p>
+<ul>
+    {% for part in page.pro %}
+    <li>{{ part }}</li>
+    {% endfor %}
+</ul>
+
+
+{% if page.website %}
+<ul>
+    <li>View the wesbite <a href="{{ pages.website }}">here</a>,</li>
+    <li>and view the repository <a href="https://github.com/{{ page.repoowner }}/{{ page.reponame }}">here</a>!</li>
+</ul>
+{% else %}
+<p>View the repository here! <a href="https://github.com/{{ page.repoowner }}/{{ page.reponame }}">here</a>,</p>
+{% endif %}
+

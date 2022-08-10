@@ -12,11 +12,14 @@ collections:
     folder: "_projects"
     create: true
     fields:
+      - {label: Layout, name: "layout", widget: "hidden", default: "project"}
       - {label: Title, name: "title", widget: "string"}
-      - {label: Owner, name: "owner", widget: "string", default: "Denperidge"}  
+      - {label: Repo owner, name: "repoowner", widget: "string", default: "Denperidge"}  
+      - {label: Repo name, name: "reponame", widget: "string"}
+      - {label: Website, name: "website", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Positive parts", name: "positive", widget: "list"}
-      - {label: "Lacking parts", name: "lacking", widget: "list"}
+      - {label: "Positive parts", name: "pro", widget: "list"}
+      - {label: "Lacking parts", name: "con", widget: "list"}
 
   - name: "contributions"
     label: "contributions"
