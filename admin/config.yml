@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Denperidge/Projects
   branch: main
+  site_domain: projects-denperidge.netlify.app
 
 media_folder: "/"
 
