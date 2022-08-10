@@ -2,7 +2,7 @@
 layout: project
 title: "Overgrowth mod: Full Local Co-op"
 repoowner: Denperidge
-reponame: " Overgrowth-Full-Local-Coop"
+reponame: Overgrowth-Full-Local-Coop
 website: https://steamcommunity.com/sharedfiles/filedetails/?id=2637639111
 description: Overgrowth is a really unique fighting game. And it even has the
   code for split-screen multiplayer in the game! But it's inaccessible without
