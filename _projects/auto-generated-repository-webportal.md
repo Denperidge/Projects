@@ -15,9 +15,4 @@ con:
     change.
   - Everything is loaded into one big page.
   - It still requires a one-time setup.
-tags:
-  - python
-  - html
-  - css
-  - osoc
 ---
