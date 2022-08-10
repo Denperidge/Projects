@@ -38,8 +38,8 @@ collections:
         allow_add: true
         field: {label: "Description", name: "description", widget: "text"}
         summary: '{{ field.description }}'
-      - label: "Tags"
-        name: "tags"
+      - label: "Project tags"
+        name: "projecttags"
         widget: "relation"
         collection: "tags"
         search_fields: ["title"]
