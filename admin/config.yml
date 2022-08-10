@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: Denperidge/Projects
+  branch: main
+
+media_folder: "/"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    fields:
+      - {label: Title, name: "title", widget: "string"}
+      - {label: Owner, name: "owner", widget: "string", default: "Denperidge"}  
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Positive parts", name: "positive", widget: "list"}
+      - {label: "Lacking parts", name: "lacking", widget: "list"}
+
+  - name: "contributions"
+    label: "contributions"
+    folder: "_contributions"
+    create: true
+    fields:
+      - {label: Title, name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Positive parts", name: "positive", widget: "list"}
+      - {label: "Lacking parts", name: "lacking", widget: "list"}
