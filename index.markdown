@@ -18,9 +18,13 @@ layout: home
 
 <h2 id="{{ project.slug }}">{{ project.title }}</h2>
 
-<object data="https://gh-card.dev/repos/{{ project.repoowner }}/{{ project.reponame }}.svg"></object>
+<a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">
+    <object data="https://gh-card.dev/repos/{{ project.repoowner }}/{{ project.reponame }}.svg"></object>
+</a>
 
 <p>{{ project.description }}</p>
+
+
 
 <p>Pro:</p>
 <ul>
@@ -39,11 +43,11 @@ layout: home
 
 {% if project.website %}
 <ul>
-    <li>View the wesbite <a href="{{ projects.website }}">here</a>,</li>
-    <li>and view the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}">here</a>!</li>
+    <li>View the wesbite <a href="{{ project.website }}">here</a>...</li>
+    <li>... and view the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>!</li>
 </ul>
 {% else %}
-<p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}">here</a>,</p>
+<p>View the repository here! <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>,</p>
 {% endif %}
 
 <p>Tags: 
