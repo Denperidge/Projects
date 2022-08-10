@@ -36,10 +36,13 @@ theme: minima
 collections:
   tags:
     output: true
+    permalink: /:collection/:title
   projects:
     output: true
+    permalink: /:title
   contributions:
     output: true
+    permalink: /:collection/:title
 
 
 # Exclude from processing.
