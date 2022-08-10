@@ -18,8 +18,8 @@ collections:
       - {label: Repo name, name: "reponame", widget: "string"}
       - {label: Website, name: "website", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Positive parts", name: "pro", widget: "list"}
-      - {label: "Lacking parts", name: "con", widget: "list"}
+      - {label: "Positive parts", name: "pro", widget: "list", allow_add: true}
+      - {label: "Lacking parts", name: "con", widget: "list", allow_add: true}
 
   - name: "contributions"
     label: "Contributions"
