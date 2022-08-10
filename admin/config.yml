@@ -7,6 +7,14 @@ backend:
 media_folder: "/"
 
 collections:
+  - name: "tags"
+    label: "Tags"
+    folder: "_tags"
+    create: true
+    fields:
+      - {label: Title, name: "title", widget: "string"}
+      - {label: "Colour", name: "colour", widget: "color"}
+
   - name: "projects"
     label: "Projects"
     folder: "_projects"
@@ -30,7 +38,14 @@ collections:
         allow_add: true
         field: {label: "Description", name: "description", widget: "text"}
         summary: '{{ field.description }}'
-      - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Tags"
+        name: "tags"
+        widget: "relation"
+        collection: "tags"
+        search_fields: "title"
+        multiple: true
+        value_field: "tags.*.title"
+        display_fields: ["title", "colour"]
 
   - name: "contributions"
     label: "Contributions"

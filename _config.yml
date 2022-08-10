@@ -36,6 +36,8 @@ theme: minima
 
 
 collections:
+  tags:
+    output: true
   projects:
     output: true
   contributions:
