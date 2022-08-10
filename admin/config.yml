@@ -46,6 +46,7 @@ collections:
         multiple: true
         value_field: "tags.*.title"
         display_fields: ["title", "colour"]
+        required: false
 
   - name: "contributions"
     label: "Contributions"

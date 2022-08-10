@@ -17,10 +17,4 @@ pro:
     entirely client-side.
 con:
   - The documentation on how to add additional years could be better.
-tags:
-  - typescript
-  - javascript
-  - osoc
-  - github-actions
-  - ""
 ---
