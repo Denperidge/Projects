@@ -36,8 +36,10 @@ theme: minima
 
 
 collections:
-  - projects
-  - contributions
+  projects:
+    output: true
+  contributions:
+    output: true
 
 
 # Exclude from processing.
