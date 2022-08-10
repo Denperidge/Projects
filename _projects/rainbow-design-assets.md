@@ -2,7 +2,7 @@
 layout: project
 title: Rainbow Design Assets
 repoowner: Denperidge
-reponame: " Rainbow-Design-Assets"
+reponame: Rainbow-Design-Assets
 website: https://rainbow.denperidge.com/
 description: A GitHub pages project that links to some cool places to get
   LGBTQIA2S+ design assets from!
