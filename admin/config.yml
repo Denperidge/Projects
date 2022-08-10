@@ -44,8 +44,8 @@ collections:
         collection: "tags"
         search_fields: ["title"]
         multiple: true
-        value_field: "tags.*.title"
-        display_fields: ["title", "colour"]
+        value_field: "tag.*.title"
+        display_fields: ["title"]
         required: false
 
   - name: "contributions"
