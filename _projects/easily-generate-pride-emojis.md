@@ -2,7 +2,7 @@
 layout: project
 title: Easily generate pride emojis
 repoowner: Denperidge
-reponame: " pride-emoji-generator"
+reponame: pride-emoji-generator
 description: Grab SVG shape cutouts and a folder of flags/images, run a script,
   have a bunch of emojis!
 pro:
