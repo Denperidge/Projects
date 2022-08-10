@@ -51,7 +51,7 @@ layout: home
 <p>View the repository <a href="https://github.com/{{ project.repoowner }}/{{ project.reponame }}" target="_blank">here</a>!</p>
 {% endif %}
 
-{% if project.tags %}
+{% if project.tags.size > 0 %}
 <p>Tags: 
     {% for tag in project.tags %}
     <a href="tag?{{ tag }}">{{ tag }}</a>,&nbsp;
