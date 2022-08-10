@@ -42,7 +42,7 @@ collections:
         name: "tags"
         widget: "relation"
         collection: "tags"
-        search_fields: "title"
+        search_fields: ["title"]
         multiple: true
         value_field: "tags.*.title"
         display_fields: ["title", "colour"]
