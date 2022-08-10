@@ -5,5 +5,6 @@ repoowner: Denperidge
 reponame: osoc-interlink
 website: " denperidge.github.io/osoc-interlink "
 description: Meow
-pro: []
+pro:
+  - typescript
 ---
