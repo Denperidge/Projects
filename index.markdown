@@ -8,7 +8,7 @@ layout: home
 <h1>Denperidge's Projects</h1>
 <ul>
 {% for project in site.projects %}
-<li><a href="{{ project.slug }}">{{ project.title }}</a></li>
+<li><a href="#{{ project.slug }}">{{ project.title }}</a></li>
 {% endfor %}
 </ul>
 
